@@ -8,8 +8,12 @@ class Card(Document):
 
     card_id = IntField(db_field="_id",arequired=True)
     color = StringField(required=True)
+    shape = StringField(required=True)
     number_of_shapes = StringField(required=True)
-
+    fill_type = StringField(required=True)
+    bitlist = StringField(required=True)
+            
+            
 
 # class Card:
 #
