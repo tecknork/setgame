@@ -9,20 +9,24 @@ class Config:
 
 class DevelopmentConfig(Config):
     DEBUG = True
-    MONGO_DATABASE_URL = "mongodb://localhost:27017"
+    MONGO_DATABASE_HOST = "localhost"
+    MONGO_DATABASE_PORT = "27017"
     MONGO_DATABASE_NAME = "setsgame"
 
 
 class TestingConfig(Config):
     DEBUG = True
     TESTING = True
-    MONGO_DATABASE_URL = "mongodb://localhost:27017"
+    MONGO_DATABASE_HOST = "localhost"
+    MONGO_DATABASE_PORT = "27017"
     MONGO_DATABASE_NAME = "setsgame_test"
 
 
 class ProductionConfig(Config):
     DEBUG = False
-    MONGO_DATABASE_URL = ""  # when moved to cloud we will need this configuration
+    # when moved to cloud we will need this configuration
+    MONGO_DATABASE_HOST = ""
+    MONGO_DATABASE_PORT = ""
     MONGO_DATABASE_NAME = "setsgame"
 
 
