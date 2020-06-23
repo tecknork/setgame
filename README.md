@@ -1,5 +1,5 @@
 
-#README Sets Game 
+# README Sets Game 
 
 ### Files 
 
@@ -14,8 +14,9 @@
      
 ## TODO LIST 
   - [X] Create Basic ReadMe File
+  - [ ] Install pycharm in your computer
   - [ ] Add conda create and activate enviroment command in ReadMe
-  - [ ] Add images to a folder named images at root of the project. 
+  - [X] Add images to a folder named images at root of the project. 
   - [ ] Add database run script command
      ```
            python manage.py migrate  
@@ -57,15 +58,6 @@
 
 - install requirments-dev.txt file 
 - using ./scripts/formatting.sh to fix any linting and formatting errors
-
-
-### Run Project 
-
-- use the following command to run the project 
-
-``` 
-    python manage.py run 
-```
 
 
 
