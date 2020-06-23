@@ -24,4 +24,8 @@ def connect_database(config):
     :param config:
     :return:
     """
-    connect(config["MONGO_DATABASE_NAME"], host=config["MONGO_DATABASE_HOST"], port=config["MONGO_DATABASE_PORT"])
+    logging.info(config["MONGO_DATABASE_NAME"])
+    logging.info(config["MONGO_DATABASE_HOST"])
+    logging.info(config["MONGO_DATABASE_PORT"])
+    
+    connect(config["MONGO_DATABASE_NAME"], host=config["MONGO_DATABASE_HOST"], port=int(config["MONGO_DATABASE_PORT"]))

@@ -6,7 +6,7 @@ class Card(Document):
     Add All Fields here
     """
 
-    id = IntField(required=True)
+    card_id = IntField(db_field="_id",arequired=True)
     color = StringField(required=True)
     number_of_shapes = StringField(required=True)
 

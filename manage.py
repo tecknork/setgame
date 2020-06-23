@@ -9,7 +9,7 @@ import os
 import click
 from flask_cli import FlaskCLI
 from app.main import create_app
-from app.main.service import generate_database
+from app.main.service.generate_database import save_to_database
 from app.main.model.deck import Deck
 from typing import List
 import logging
@@ -24,7 +24,7 @@ def migrate():
     run this command to store all cards information to database table
     :return:
     """
-    generate_database()
+    save_to_database()
     logging.info("this function is used to run function to add all information to mongo database")
 
 
