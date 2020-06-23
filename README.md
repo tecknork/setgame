@@ -41,6 +41,18 @@
 ```
     pip install -r requirements.txt;
 ```
+- set enviroment variable 
+  ```bash
+    export FLASK_APP=manage.py
+   ``` 
+- run commands 
+
+   ```
+   flask migrate 
+   flask checkcards -c 12 -c 13 -c 15 
+   flask drawcards --cards 12
+   ```
+  
 ### Linting and Formatting 
 
 - install requirments-dev.txt file 
